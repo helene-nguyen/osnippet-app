@@ -21,7 +21,7 @@ USER: code_user, username, email, password, created_at, update_at
 CREATE, 11 CATEGORY, 0N USER
 CATEGORY: code_category, name, description, image, created_at, update_at
 
-OWN, 11 ROLE, 11 USER
+OWN, 1N ROLE, 11 USER
 ROLE: code_role, name, created_at, updated_at
 :
 ```

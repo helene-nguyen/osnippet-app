@@ -5,8 +5,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const session = require('express-session');
-const router = require('./app/routers/index');
-const errorController = require('./app/controllers/errorController');
+const router = require('./app/routers/index.js');
+const errorController = require('./app/controllers/errorController.js');
 
 //~url encoded
 app.use(express.json());

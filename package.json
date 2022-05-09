@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npx node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "db": "psql -U osnippet -d osnippet -f ./data/01-create_db.sql"
   },
   "keywords": [],
   "author": "yumicode",
