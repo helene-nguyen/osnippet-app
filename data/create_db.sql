@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS "category" (
     "description" TEXT NULL,
     "image" TEXT NULL,
     "user_id" INTEGER NOT NULL REFERENCES "user"("id"),
-    "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     "updated_at" TIMESTAMPTZ
 );
 
