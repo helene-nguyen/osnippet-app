@@ -1,0 +1,63 @@
+:root {
+    --hover-menu-bg: rgba(12 15 25 / 30%);
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s;
+    color: var(--white);
+    font-size: 2em;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+}
+
+a:hover {
+    background-color: var(--hover-menu-bg);
+}
+
+.is-active {
+    visibility: visible;
+    opacity: 1;
+    border-bottom: 2px solid var(--white);
+}
+
+.header-menu {
+    margin-bottom: 2em;
+}
+
+.menu-link {
+    margin: 0em 1.5em;
+    padding: 0.5em 1em;
+
+}
+
+.menu-link:hover {
+    border-bottom: 2px solid var(--white);
+}
+
+.title-profile {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.glass {
+    width: 60%;
+    min-width: 20em;
+    height: 50em;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    margin-top: 2em;
+
+}
+
+/*~MEDIA QUERIES*/
+@media screen and (max-width : 720px) {
+
+    .title-profile {
+        right: auto;
+    }
+
+}

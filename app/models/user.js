@@ -4,7 +4,7 @@ const {
     DataTypes
 } = require('sequelize');
 //~connect to DB
-const sequelize = require('../database');
+const sequelize = require('../database.js');
 
 class User extends Model {};
 
