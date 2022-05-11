@@ -6,9 +6,7 @@ module.exports = {
 
     async renderHomePage(req, res) {
         try {
-           
-            res.render('pages/homePage', { title: 'Home page', error: ''});
-            
+            res.render('pages/homePage', { title: 'Home page', error: ''});       
         } catch (err) {
             errorController._500(err, req, res);
         }
